@@ -1,0 +1,305 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 60px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  -webkit-text-decoration: underline 10px #FF0033;
+          text-decoration: underline 10px #FF0033;
+}
+
+img {
+  width: 100%;
+  background-size: cover;
+}
+
+.parallax-content {
+  min-height: 300px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header {
+  width: 100%;
+  padding-bottom: 30px;
+}
+header img {
+  position: relative;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header ul {
+  display: flex;
+  position: absolute;
+  top: 30px;
+  right: 100px;
+}
+header ul li {
+  list-style: none;
+}
+header ul li a {
+  text-decoration: none;
+  padding-right: 50px;
+  color: aliceblue;
+  text-shadow: 2px 2px 2px gray;
+}
+header ul li a:hover {
+  color: #FF0033;
+}
+header .main-title {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  font-size: 80px;
+  color: aliceblue;
+  text-shadow: 10px 5px 5px gray;
+}
+
+main {
+  width: 100%;
+}
+main .menu-catch {
+  position: relative;
+  align-items: center;
+  background-image: url(../img/menu.jpg);
+}
+main .menu-catch .menu-title {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  color: #fff;
+  text-shadow: 10px 5px 5px gray;
+}
+main .menu-detail {
+  background-color: #fff;
+  display: flex;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+main .menu-detail .menu-column {
+  justify-content: stretch;
+  width: 50%;
+  min-height: 600px;
+}
+main .menu-detail .menu-column:last-child {
+  border-left: solid 1px #000;
+}
+main .menu-detail .menu-column dl {
+  width: 80%;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  height: 50px;
+  padding-bottom: 2px;
+}
+main .menu-detail .menu-column dt {
+  border-bottom: dotted 1px gray;
+  vertical-align: text-bottom;
+  width: 80%;
+  margin-bottom: 25px;
+}
+main .menu-detail .menu-column dd {
+  width: 20%;
+  text-align: right;
+  padding-top: 8px;
+}
+main .about-catch {
+  position: relative;
+  background-image: url(../img/about.jpg);
+}
+main .about-catch .about-title {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  color: #fff;
+  text-shadow: 10px 5px 5px gray;
+}
+main .about-item {
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+}
+main .about-item .about-detail ul {
+  display: flex;
+}
+main .about-item .about-detail ul li {
+  list-style: none;
+  margin: 20px;
+}
+main .about-item .about-more {
+  text-align: center;
+  margin: 50px;
+}
+main .about-item .about-more .button {
+  color: #000;
+  font-size: 14px;
+  position: relative;
+  display: inline-block;
+  padding: 15px 60px;
+  border: 2px solid #fff;
+  text-decoration: none;
+  outline: none;
+  transition: all 0.3s;
+}
+main .about-item .about-more .button::before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  content: "";
+  transition: all 0.3s;
+}
+main .about-item .about-more .button::after {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  z-index: 2;
+  content: "";
+  transition: all 0.3s;
+}
+main .about-item .about-more .button::before {
+  border-top: 2px solid red;
+  border-left: 2px solid red;
+  width: 20px;
+  height: 20px;
+}
+main .about-item .about-more .button::after {
+  border-right: 2px solid red;
+  border-bottom: 2px solid red;
+  width: 20px;
+  height: 20px;
+}
+main .about-item .about-more .button:hover::after,
+main .about-item .about-more .button:hover::before {
+  width: 99%;
+  height: 95%;
+}
+main .location-catch {
+  position: relative;
+  background-image: url(../img/location.jpg);
+}
+main .location-catch .location-title {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  color: #fff;
+  text-shadow: 10px 5px 5px gray;
+}
+main .access-info {
+  margin: 50px;
+}
+main .access-info .access-wrap {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+main .access-info .access-wrap .map {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+main .access-info .access-wrap .map img {
+  width: 100%;
+}
+main .access-info .access-wrap .access p {
+  margin: 20px;
+}
+
+footer {
+  margin-top: 100px;
+  position: relative;
+}
+footer span {
+  position: absolute;
+  left: 50%;
+}
+
+@media (max-width: 800px) {
+  body header {
+    height: 100vh;
+    margin-bottom: 20px;
+  }
+  body header .main-title {
+    -o-object-fit: cover;
+       object-fit: cover;
+    font-size: 40px;
+    text-align: center;
+  }
+  body header .main-visual {
+    height: auto;
+  }
+  body header ul {
+    width: 295px;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  body header ul li {
+    width: 80px;
+  }
+  body main .menu-catch {
+    width: 100%;
+    position: relative;
+  }
+  body main .menu-catch .menu-title {
+    font-size: 35px;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+  }
+  body main .menu-detail {
+    display: block;
+    width: 80%;
+  }
+  body main .menu-detail .menu-column {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }
+  body main .menu-detail .menu-column:last-child {
+    border-left: none;
+  }
+  body main .about-catch .about-title {
+    font-size: 35px;
+  }
+  body main .about-item {
+    width: 100%;
+  }
+  body main .about-item .about-detail ul {
+    display: block;
+  }
+  body main .location-catch .location-title {
+    font-size: 35px;
+  }
+  body main .access-info {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body main .access-info h3 {
+    font-size: 25px;
+  }
+  body main .access-info .access p {
+    font-size: 13px;
+  }
+}/*# sourceMappingURL=style.css.map */
