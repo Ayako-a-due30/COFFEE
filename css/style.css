@@ -37,13 +37,14 @@ img {
 
 header {
   width: 100%;
-  padding-bottom: 30px;
-}
-header img {
+  background-image: url(../img/mainvisual.jpg);
   position: relative;
   min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center top;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 header ul {
   display: flex;
@@ -122,6 +123,11 @@ main .menu-detail .menu-column dd {
   width: 20%;
   text-align: right;
   padding-top: 8px;
+}
+main .menu-detail .menu-column-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 main .about-catch {
   position: relative;

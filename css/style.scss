@@ -37,15 +37,14 @@ img {
 
 header {
     width: 100%;
-    img {
-        position: relative;
-        min-height: 100vh;
-        background-size: cover;
-        background-repeat: no-repeat;
-
-    }
-
+    background-image: url(../img/mainvisual.jpg);
+    position: relative;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
     padding-bottom: 30px;
+    margin-bottom: 30px;
 
     ul {
         display: flex;
@@ -145,7 +144,12 @@ main {
             }
         }
 
-        //menu-column
+        .menu-column-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
     }
 
     //menu-detail
