@@ -11,6 +11,8 @@ html {
 h2 {
   text-align: center;
   font-size: 60px;
+  color: #f1e0ce;
+  font-family: "Montserrat", sans-serif;
 }
 
 h3 {
@@ -18,13 +20,18 @@ h3 {
   font-size: 40px;
   margin-top: 40px;
   margin-bottom: 40px;
-  -webkit-text-decoration: underline 10px #FF0033;
-          text-decoration: underline 10px #FF0033;
+  -webkit-text-decoration: underline 5px #e36255;
+          text-decoration: underline 5px #e36255;
+  font-family: "Zen Maru Gothic", sans-serif;
 }
 
 img {
   width: 100%;
   background-size: cover;
+}
+
+p {
+  font-family: "Zen Maru Gothic", sans-serif;
 }
 
 .parallax-content {
@@ -58,18 +65,21 @@ header ul li {
 header ul li a {
   text-decoration: none;
   padding-right: 50px;
-  color: aliceblue;
+  color: #f1e0ce;
   text-shadow: 2px 2px 2px gray;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
 }
 header ul li a:hover {
-  color: #FF0033;
+  color: #f3c262;
 }
 header .main-title {
   position: absolute;
+  font-family: "Montserrat", sans-serif;
   top: 45%;
-  left: 40%;
+  left: 10%;
   font-size: 80px;
-  color: aliceblue;
+  color: #f1e0ce;
   text-shadow: 10px 5px 5px gray;
 }
 
@@ -85,7 +95,6 @@ main .menu-catch .menu-title {
   position: absolute;
   top: 40%;
   left: 45%;
-  color: #fff;
   text-shadow: 10px 5px 5px gray;
 }
 main .menu-detail {
@@ -96,6 +105,8 @@ main .menu-detail {
   margin-left: auto;
   margin-top: 30px;
   margin-bottom: 50px;
+  max-width: 1000px;
+  padding: 90px 16px 150px 16px;
 }
 main .menu-detail .menu-column {
   justify-content: stretch;
@@ -112,17 +123,20 @@ main .menu-detail .menu-column dl {
   margin-left: auto;
   height: 50px;
   padding-bottom: 2px;
+  font-family: "Zen Maru Gothic", sans-serif;
 }
 main .menu-detail .menu-column dt {
   border-bottom: dotted 1px gray;
   vertical-align: text-bottom;
   width: 80%;
   margin-bottom: 25px;
+  font-family: "Zen Maru Gothic", sans-serif;
 }
 main .menu-detail .menu-column dd {
   width: 20%;
   text-align: right;
   padding-top: 8px;
+  font-family: "Zen Maru Gothic", sans-serif;
 }
 main .menu-detail .menu-column-right {
   display: flex;
@@ -137,20 +151,21 @@ main .about-catch .about-title {
   position: absolute;
   top: 45%;
   left: 40%;
-  color: #fff;
   text-shadow: 10px 5px 5px gray;
 }
 main .about-item {
+  max-width: 1000px;
+  padding: 90px 16px 90px 16px;
   width: 60%;
   margin-right: auto;
   margin-left: auto;
 }
-main .about-item .about-detail ul {
-  display: flex;
+main .about-item .about-detail article {
+  margin-top: 50px;
 }
-main .about-item .about-detail ul li {
-  list-style: none;
-  margin: 20px;
+main .about-item .about-detail article p {
+  line-height: 2;
+  text-align: center;
 }
 main .about-item .about-more {
   text-align: center;
@@ -184,14 +199,14 @@ main .about-item .about-more .button::after {
   transition: all 0.3s;
 }
 main .about-item .about-more .button::before {
-  border-top: 2px solid red;
-  border-left: 2px solid red;
+  border-top: 2px solid #a2c5c9;
+  border-left: 2px solid #a2c5c9;
   width: 20px;
   height: 20px;
 }
 main .about-item .about-more .button::after {
-  border-right: 2px solid red;
-  border-bottom: 2px solid red;
+  border-right: 2px solid #a2c5c9;
+  border-bottom: 2px solid #a2c5c9;
   width: 20px;
   height: 20px;
 }
@@ -208,37 +223,38 @@ main .location-catch .location-title {
   position: absolute;
   top: 45%;
   left: 40%;
-  color: #fff;
   text-shadow: 10px 5px 5px gray;
 }
 main .access-info {
   margin: 50px;
 }
 main .access-info .access-wrap {
+  max-width: 1000px;
+  padding: 50px 16px 50px 16px;
   width: 90%;
   margin-right: auto;
   margin-left: auto;
+  text-align: center;
 }
-main .access-info .access-wrap .map {
+main .access-info .access-wrap iframe {
   margin-top: 50px;
   margin-bottom: 50px;
   margin-right: auto;
   margin-left: auto;
-}
-main .access-info .access-wrap .map img {
-  width: 100%;
+  width: 80%;
+  filter: grayscale(100%);
 }
 main .access-info .access-wrap .access p {
   margin: 20px;
 }
 
 footer {
-  margin-top: 100px;
-  position: relative;
+  height: 100px;
+  text-align: center;
+  padding-top: 30px;
 }
 footer span {
-  position: absolute;
-  left: 50%;
+  vertical-align: middle;
 }
 
 @media (max-width: 800px) {
@@ -251,6 +267,7 @@ footer span {
        object-fit: cover;
     font-size: 40px;
     text-align: center;
+    left: 33%;
   }
   body header .main-visual {
     height: auto;
@@ -272,11 +289,11 @@ footer span {
     font-size: 35px;
     text-align: center;
     position: absolute;
-    left: 40%;
+    left: 33%;
   }
   body main .menu-detail {
     display: block;
-    width: 80%;
+    width: 100%;
   }
   body main .menu-detail .menu-column {
     margin-right: auto;
@@ -286,8 +303,13 @@ footer span {
   body main .menu-detail .menu-column:last-child {
     border-left: none;
   }
+  body main .menu-detail .menu-column dl {
+    height: 70px;
+    vertical-align: baseline;
+  }
   body main .about-catch .about-title {
     font-size: 35px;
+    left: 33%;
   }
   body main .about-item {
     width: 100%;
@@ -297,6 +319,7 @@ footer span {
   }
   body main .location-catch .location-title {
     font-size: 35px;
+    left: 33%;
   }
   body main .access-info {
     margin-left: auto;
@@ -305,7 +328,15 @@ footer span {
   body main .access-info h3 {
     font-size: 25px;
   }
-  body main .access-info .access p {
+  body main .access-info .access-wrap {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  body main .access-info .access-wrap .access p {
     font-size: 13px;
+  }
+  footer {
+    height: 50px;
   }
 }/*# sourceMappingURL=style.css.map */
