@@ -62,6 +62,7 @@ header {
     padding-top: 20px;
     ul {
         display: flex;
+        // 右寄せ
         justify-content: flex-end;
 
         // positionはレイアウトが崩れ易いので出来るだけ使用しない
