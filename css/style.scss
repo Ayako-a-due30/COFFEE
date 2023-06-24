@@ -58,19 +58,24 @@ header {
     background-position: center top;
     padding-bottom: 30px;
     margin-bottom: 30px;
-
+    // 上部の余白を設定
+    padding-top: 20px;
     ul {
         display: flex;
-        position: absolute;
-        top: 30px;
-        right: 100px;
+        justify-content: flex-end;
+
+        // positionはレイアウトが崩れ易いので出来るだけ使用しない
+        // position: absolute;
+        // top: 30px;
+        // right: 100px;
 
         li {
             list-style: none;
 
             a {
                 text-decoration: none;
-                padding-right: 50px;
+                // メニューアイテムの間隔を少し狭くしました
+                padding-right: 30px;
                 color: $titleColor;
                 text-shadow: 2px 2px 2px gray;
                 font-family: 'Montserrat', sans-serif;
@@ -91,8 +96,12 @@ header {
     .main-title {
         position: absolute;
         font-family: 'Montserrat', sans-serif;
-        top: 45%;
-        left: 10%;
+        // top: 45%;
+        // left: 10%;
+        // 以下の方法は上下左右真ん中寄せする方法です
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
         font-size: 80px;
         color: $titleColor;
         text-shadow: 10px 5px 5px gray;
@@ -320,7 +329,8 @@ footer {
                 object-fit: cover;
                 font-size: 40px;
                 text-align: center;
-                left: 33%;
+                // タイトルを真ん中寄せにしたいので不要
+                // left: 33%;
             }
 
             .main-visual {
@@ -329,13 +339,15 @@ footer {
             }
 
             ul {
-                width: 295px;
+                // 横幅指定は不要です
+                // width: 295px;
                 right: 0;
                 margin-right: auto;
                 margin-left: auto;
 
                 li {
-                    width: 80px;
+                       // 横幅指定は不要です
+                    // width: 80px;
                 }
             }
 

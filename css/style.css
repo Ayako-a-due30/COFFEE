@@ -20,8 +20,7 @@ h3 {
   font-size: 40px;
   margin-top: 40px;
   margin-bottom: 40px;
-  -webkit-text-decoration: underline 5px #e36255;
-          text-decoration: underline 5px #e36255;
+  text-decoration: underline 5px #e36255;
   font-family: "Zen Maru Gothic", sans-serif;
 }
 
@@ -52,19 +51,18 @@ header {
   background-position: center top;
   padding-bottom: 30px;
   margin-bottom: 30px;
+  padding-top: 20px;
 }
 header ul {
   display: flex;
-  position: absolute;
-  top: 30px;
-  right: 100px;
+  justify-content: flex-end;
 }
 header ul li {
   list-style: none;
 }
 header ul li a {
   text-decoration: none;
-  padding-right: 50px;
+  padding-right: 30px;
   color: #f1e0ce;
   text-shadow: 2px 2px 2px gray;
   font-family: "Montserrat", sans-serif;
@@ -76,8 +74,9 @@ header ul li a:hover {
 header .main-title {
   position: absolute;
   font-family: "Montserrat", sans-serif;
-  top: 45%;
-  left: 10%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 80px;
   color: #f1e0ce;
   text-shadow: 10px 5px 5px gray;
@@ -263,23 +262,17 @@ footer span {
     margin-bottom: 20px;
   }
   body header .main-title {
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     font-size: 40px;
     text-align: center;
-    left: 33%;
   }
   body header .main-visual {
     height: auto;
   }
   body header ul {
-    width: 295px;
     right: 0;
     margin-right: auto;
     margin-left: auto;
-  }
-  body header ul li {
-    width: 80px;
   }
   body main .menu-catch {
     width: 100%;
@@ -339,4 +332,4 @@ footer span {
   footer {
     height: 50px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
